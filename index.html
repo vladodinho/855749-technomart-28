@@ -7,8 +7,8 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/mini.css" rel="stylesheet">
+  <link href="./css/normalize-mini.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Техномарт</title>
 </head>
 
@@ -139,12 +139,12 @@
             <img alt="Перфоратор BOSCH BFG 9000" class="popular-item-image" height="164" src="./img/popular-item1.png" width="184">
           </div>
           <div class="popular-item-description">
-            <h3 class="popular-item-name">Перфоратор BOSCH BFG 9000</h3>
+            <a href=""><h3 class="popular-item-name">Перфоратор BOSCH BFG 9000</h3></a>
             <p class="popular-item-old-price">32500 Р.</p>
             <p class="popular-item-price">25500 Р.</p>
           </div>
           <div class="popular-item-hover-buttons">
-            <button class="popular-item-hover-buy-button" type="button">КУПИТЬ</button>
+            <a class="popular-item-hover-buy-button">КУПИТЬ</a>
             <button class="popular-item-hover-bookmark-button" type="button">В закладки</button>
           </div>
         </li>
@@ -154,12 +154,12 @@
             <img alt="Перфоратор BOSCH BFG 3000" class="popular-item-image" height="112" src="./img/popular-item2.png" width="127">
           </div>
           <div class="popular-item-description">
-            <h3 class="popular-item-name">Перфоратор BOSCH BFG 3000</h3>
+            <a href=""><h3 class="popular-item-name">Перфоратор BOSCH BFG 3000</h3></a>
             <p class="popular-item-old-price">22500 Р.</p>
             <p class="popular-item-price">15500 Р.</p>
           </div>
           <div class="popular-item-hover-buttons">
-            <button class="popular-item-hover-buy-button" type="button">КУПИТЬ</button>
+            <a class="popular-item-hover-buy-button">КУПИТЬ</a>
             <button class="popular-item-hover-bookmark-button" type="button">В закладки</button>
           </div>
         </li>
@@ -169,12 +169,12 @@
             <img alt="Перфоратор BOSCH BFG 6000" class="popular-item-image" height="128" src="./img/popular-item3.png" width="144">
           </div>
           <div class="popular-item-description">
-            <h3 class="popular-item-name">Перфоратор BOSCH BFG 6000</h3>
+            <a href=""><h3 class="popular-item-name">Перфоратор BOSCH BFG 6000</h3></a>
             <p class="popular-item-old-price">30500 Р.</p>
             <p class="popular-item-price">25500 Р.</p>
           </div>
           <div class="popular-item-hover-buttons">
-            <button class="popular-item-hover-buy-button" type="button">КУПИТЬ</button>
+            <a class="popular-item-hover-buy-button">КУПИТЬ</a>
             <button class="popular-item-hover-bookmark-button" type="button">В закладки</button>
           </div>
         </li>
@@ -184,12 +184,12 @@
             <img alt="Перфоратор BOSCH BFG 2000" class="popular-item-image" height="112" src="./img/popular-item4.png" width="127">
           </div>
           <div class="popular-item-description">
-            <h3 class="popular-item-name">Перфоратор BOSCH BFG 2000</h3>
+            <a href=""><h3 class="popular-item-name">Перфоратор BOSCH BFG 2000</h3></a>
             <p class="popular-item-old-price"></p>
             <p class="popular-item-price">12500 Р.</p>
           </div>
           <div class="popular-item-hover-buttons">
-            <button class="popular-item-hover-buy-button" type="button">КУПИТЬ</button>
+            <a class="popular-item-hover-buy-button">КУПИТЬ</a>
             <button class="popular-item-hover-bookmark-button" type="button">В закладки</button>
           </div>
         </li>
@@ -220,9 +220,7 @@
 
       <div class="services-wrapper">
         <h2 class="services-header">Сервисы</h2>
-        <p class="services-description">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся
-          изо
-          всех сил, чтобы сделать ваши покупки приятными.</p>
+        <p class="services-description">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
         <div class="services-slider-container">
           <ul class="services-slider-buttons">
@@ -278,11 +276,11 @@
       <section class="contacts">
         <h2 class="contacts-header">КОНТАКТЫ</h2>
         <p class="contacts-paragraph">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-        <a class="contacts-minimap-container" href=""><img alt="" src="./img/minimap.png"></a>
-        <a class="contacts-button" href="">Заблудились? НапиШИТЕ НАМ!</a>
+        <a class="contacts-minimap-container" href="./map.html"><img alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" src="./img/minimap.png"></a>
+        <a class="contacts-button" href="./writeus.html">Заблудились? НапиШИТЕ НАМ!</a>
       </section>
 
-      <section class="write-us-popup">
+      <section class="write-us-popup display-none">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <button aria-label="Закрыть окно" class="write-us-popup-button-close" type="button"></button>
         <form action="https://echo.htmlacademy.ru/" class="write-us-form" method="post">
@@ -307,7 +305,7 @@
         </form>
       </section>
 
-      <div class="map-popup">
+      <div class="map-popup display-none">
         <button class="map-popup-button-close" type="button"></button>
         <iframe allowfullscreen="" aria-hidden="false" height="450"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6497758352821!2d30.322536129284714!3d59.93879419886729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sde!4v1593194577703!5m2!1sru!2sde"
@@ -357,9 +355,9 @@
 
         <div class="main-footer-bottom-middle">
           <ul class="main-footer-socials">
-            <li class="main-footer-socials-vk"><a href=""></a></li>
-            <li class="main-footer-socials-fb"><a href=""></a></li>
-            <li class="main-footer-socials-insta"><a href=""></a></li>
+            <li class="main-footer-socials-vk" aria-label="Мы ВКонтакте"><a href=""></a></li>
+            <li class="main-footer-socials-fb" aria-label="Мы в Фейсбуке"><a href=""></a></li>
+            <li class="main-footer-socials-insta" aria-label="Мы в Инстаграме"><a href=""></a></li>
           </ul>
         </div>
 
@@ -374,7 +372,7 @@
     </div>
   </footer>
 
-  <div class="popup-cart-added">
+  <div class="popup-cart-added display-none">
     <button class="popup-cart-added-button-close" type="button"></button>
     <p class="popup-cart-added-message">Товар добавлен в корзину!</p>
     <div class="popup-cart-added-buttons">
