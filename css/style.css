@@ -81,13 +81,12 @@ body {
 
 .main-header-first-line-container {
   background-color: var(--section-dark-background);
-  width: 940px;
 }
 
 .main-header-first-line-content {
   display: flex;
-  width: 940px;
   margin: 0 auto;
+  width: 940px;
 }
 
 .main-header-logo-container {
