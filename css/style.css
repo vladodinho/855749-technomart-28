@@ -763,10 +763,6 @@ body {
   border: 1px solid var(--popular-item-border);
 }
 
-.popular-item:hover .popular-item-hover-buttons {
-  display: flex;
-}
-
 .popular-item:hover {
   box-shadow: 0 4px 20px var(--popular-item-hover-shadow);
 }
@@ -860,12 +856,21 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  opacity: 0;
   flex-direction: column;
   width: 218px;
   height: 178px;
   background-color: var(--white-color);
   align-items: center;
+  display: flex;
+}
+
+.popular-item:hover .popular-item-hover-buttons {
+  opacity: 1;
+}
+
+.popular-item:focus-within .popular-item-hover-buttons {
+  opacity: 1;
 }
 
 .popular-item-hover-buy-button {
